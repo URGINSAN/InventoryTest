@@ -1,0 +1,62 @@
+<?xml version ="1.0" encoding="utf-8" standalone ="yes"?>
+
+<Data>
+	<item>
+		<name>Яблоко</name>
+		<cost>1</cost>
+		<soldCost>1</soldCost>
+		<sprite>Items/Apple.png</sprite>
+		<owner>player</owner>
+	</item>
+	<item>
+		<name>Пиво</name>
+		<cost>2</cost>
+		<soldCost>1</soldCost>
+		<sprite>Items/Beer.png</sprite>
+		<owner>dealer</owner>
+	</item>
+	<item>
+		<name>Хлеб</name>
+		<cost>1</cost>
+		<soldCost>1</soldCost>
+		<sprite>Items/Bread.png</sprite>
+		<owner>player</owner>
+	</item>
+
+	<item>
+		<name>Сыр</name>
+		<cost>3</cost>
+		<soldCost>1</soldCost>
+		<sprite>Items/Cheese.png</sprite>
+		<owner>player</owner>
+	</item>
+	<item>
+		<name>Рыбный стейк</name>
+		<cost>5</cost>
+		<soldCost>2</soldCost>
+		<sprite>Items/Fish Steak.png</sprite>
+		<owner>dealer</owner>
+	</item>
+	<item>
+		<name>Мясо</name>
+		<cost>4</cost>
+		<soldCost>2</soldCost>
+		<sprite>Items/Meat.png</sprite>
+		<owner>dealer</owner>
+	</item>
+
+	<item>
+		<name>Гриб</name>
+		<cost>2</cost>
+		<soldCost>1</soldCost>
+		<sprite>Items/Mushroom.png</sprite>
+		<owner>player</owner>
+	</item>
+	<item>
+		<name>Вино</name>
+		<cost>4</cost>
+		<soldCost>2</soldCost>
+		<sprite>Items/Wine.png</sprite>
+		<owner>dealer</owner>
+	</item>
+</Data>
