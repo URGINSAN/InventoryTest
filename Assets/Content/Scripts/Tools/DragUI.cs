@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,16 +5,20 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 {
     private Vector2 offset;
     private RectTransform rectTransform;
-    private Canvas canv;
+
+    public delegate void StartDragHandler();
+    public event StartDragHandler OnStartDrag;
 
     void Awake()
     {
-        canv = GetComponent<Canvas>();
         rectTransform = GetComponent<RectTransform>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        rectTransform = GetComponent<RectTransform>();
+        OnStartDrag?.Invoke();
+        BeginDrag(eventData);
         offset = rectTransform.anchoredPosition - eventData.position;
     }
 
@@ -26,11 +29,27 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        
+        EndDrag(eventData);
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        canv.sortingOrder = SortOrders.instance.GetLastSortOrder(true);
+        OnStartDrag?.Invoke();
+        OnPress();
+    }
+
+    public virtual void BeginDrag(PointerEventData eventData)
+    {
+
+    }
+
+    public virtual void EndDrag(PointerEventData eventData)
+    {
+
+    }
+
+    public virtual void OnPress()
+    {
+
     }
 }

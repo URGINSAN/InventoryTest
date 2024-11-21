@@ -14,9 +14,9 @@ public class DropCell : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag.transform.tag.Equals("Cell"))
         {
-            DragCell drag = eventData.pointerDrag.GetComponent<DragCell>();
+            ItemCell item = eventData.pointerDrag.GetComponent<ItemCell>();
 
-            if (drag != null)
+            if (item != null)
             {
                 GameController.instance.MakeDeal(panel.GetOwner());
             }

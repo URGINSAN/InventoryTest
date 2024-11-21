@@ -14,6 +14,8 @@ public class GameController : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+
+        Application.targetFrameRate = -1;
     }
 
     public void SetCurrentDraggedItem(ItemCell itemCell)

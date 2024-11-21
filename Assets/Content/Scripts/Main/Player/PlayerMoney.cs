@@ -15,17 +15,17 @@ public class PlayerMoney : MonoBehaviour
     {
         if (instance == null)
             instance = this;
-        player = Player.instance;
     }
 
     private void Start()
     {
+        player = Player.instance;
         player.OnLoadData += GetStartMoney;
     }
 
     void GetStartMoney()
     {
-        money = player.GetPlayerMoney();// Player.instance.GetPlayerMoney();
+        money = player.GetPlayerMoney();
         OnMoneyChange?.Invoke(money);
     }
 

@@ -22,8 +22,9 @@ public class Items : MonoBehaviour
             instance = this;
     }
 
-    void Start()
+    IEnumerator Start()
     {
+        yield return new WaitForEndOfFrame();
         GetDataFromXML();
     }
 

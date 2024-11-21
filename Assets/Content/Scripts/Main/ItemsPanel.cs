@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemsPanel : MonoBehaviour
+public class ItemsPanel : DragUI
 {
     [SerializeField] private string owner;
     [SerializeField] private string ownerName;
@@ -11,15 +11,11 @@ public class ItemsPanel : MonoBehaviour
     [SerializeField] private GameObject ItemGO;
     [SerializeField] private Transform Grid;
 
-    private void Awake()
+    private void Start()
     {
         SetPanel();
         
         Items.instance.OnLoadData += LoadItemsToPanel;
-    }
-
-    void Start()
-    {
         GameController.instance.AddPanel(owner, this);
     }
 

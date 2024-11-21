@@ -362,7 +362,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7324386063307320154}
   - component: {fileID: 7324386063307320153}
-  - component: {fileID: -4401180803925479272}
   - component: {fileID: 315307012118002716}
   m_Layer: 5
   m_Name: ItemCell
@@ -413,20 +412,6 @@ MonoBehaviour:
   img: {fileID: 7324386062159977836}
   nameText: {fileID: 7324386061682756678}
   costText: {fileID: 7324386061926276711}
---- !u!114 &-4401180803925479272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7324386063307320155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 634c1ac016275e74bbbe076b4361fb2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startSortOrder: 5
-  dragSortOrder: 11
 --- !u!225 &315307012118002716
 CanvasGroup:
   m_ObjectHideFlags: 0

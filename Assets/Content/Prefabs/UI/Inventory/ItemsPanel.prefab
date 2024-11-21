@@ -159,10 +159,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7629506937119360867}
-  - component: {fileID: 7629506937119360865}
   - component: {fileID: -3980966046730733170}
   - component: {fileID: -2403527357476654386}
-  - component: {fileID: 4555137121345588512}
+  - component: {fileID: 7629506937119360865}
+  - component: {fileID: 1742889875616975289}
   m_Layer: 5
   m_Name: ItemsPanel
   m_TagString: Untagged
@@ -191,23 +191,6 @@ RectTransform:
   m_AnchoredPosition: {x: -526, y: 69}
   m_SizeDelta: {x: 600, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7629506937119360865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7629506937119360796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd7eb3867125a06458d4d3c440955607, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: Player
-  ownerName: "\u0418\u0433\u0440\u043E\u043A"
-  ownerText: {fileID: 7629506936335145914}
-  ItemGO: {fileID: 7324386063307320155, guid: 90c89e52a8349194d9e96a7a8590cdc2, type: 3}
-  Grid: {fileID: 7629506935991362205}
 --- !u!223 &-3980966046730733170
 Canvas:
   m_ObjectHideFlags: 0
@@ -246,7 +229,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4555137121345588512
+--- !u!114 &7629506937119360865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,9 +238,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 7629506937119360796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc2600a37451b0e45baf71da54f649c8, type: 3}
+  m_Script: {fileID: 11500000, guid: dd7eb3867125a06458d4d3c440955607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: Player
+  ownerName: "\u0418\u0433\u0440\u043E\u043A"
+  ownerText: {fileID: 7629506936335145914}
+  ItemGO: {fileID: 7324386063307320155, guid: 90c89e52a8349194d9e96a7a8590cdc2, type: 3}
+  Grid: {fileID: 7629506935991362205}
+--- !u!114 &1742889875616975289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629506937119360796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e87b894b5987864bae80d1179960759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LowerSortingIndex: 1
+  UpperSortingIndex: 2
 --- !u!1 &7629506937408754062
 GameObject:
   m_ObjectHideFlags: 0
