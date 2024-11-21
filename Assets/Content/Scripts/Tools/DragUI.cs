@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
+public abstract class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
 {
     private Vector2 offset;
     private RectTransform rectTransform;
@@ -39,17 +39,11 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     }
 
     public virtual void BeginDrag(PointerEventData eventData)
-    {
-
-    }
+    {}
 
     public virtual void EndDrag(PointerEventData eventData)
-    {
-
-    }
+    {}
 
     public virtual void OnPress()
-    {
-
-    }
+    {}
 }

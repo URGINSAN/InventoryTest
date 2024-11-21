@@ -57,6 +57,11 @@ public class GameController : MonoBehaviour
         {
             PlayerMoney.instance.ChangeMoney(-CurrentDraggedItem.item.cost);
             PlayerPanel.AddItem(CurrentDraggedItem);
+            ShowMessage($"Вы купили {CurrentDraggedItem.item.name}");
+        }
+        else
+        {
+            ShowMessage($"У вас недостаточно золота");
         }
     }
 
@@ -64,5 +69,11 @@ public class GameController : MonoBehaviour
     {
         PlayerMoney.instance.ChangeMoney(CurrentDraggedItem.item.soldCost);
         DealerPanel.AddItem(CurrentDraggedItem);
+        ShowMessage($"Вы продали {CurrentDraggedItem.item.name}");
+    }
+
+    void ShowMessage(string _text)
+    {
+        GameMessager.instance.ShowMessage(_text);
     }
 }

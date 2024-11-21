@@ -37,10 +37,6 @@ public class PlayerMoney : MonoBehaviour
         {
             can = true;
         }
-        else
-        {
-            OnNoMoney();
-        }
 
         return can;
     }
@@ -49,10 +45,5 @@ public class PlayerMoney : MonoBehaviour
     {
         money += count;
         OnMoneyChange?.Invoke(money);
-    }
-
-    void OnNoMoney()
-    {
-
     }
 }
